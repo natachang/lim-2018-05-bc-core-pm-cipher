@@ -1,0 +1,139 @@
+
+*{
+  margin: 0px;
+  padding: 0px;
+}
+
+body{
+    margin: 0px;
+    padding: 0px;
+}
+
+header{
+  width: 100%;
+  height: 120px;
+  background: red;
+  
+}
+
+.back{
+  height: 120px;
+  width: 80%;
+  background: blue;
+  margin: auto;
+
+}
+
+.logo{
+  height: 120px;
+  width: 55%;
+  background: yellow;
+}
+
+.logo p a{
+  font-size: 80px;
+  
+
+}
+
+.wel{
+  height: 130px;
+  width: 70%;
+  background: pink;
+  margin: auto;
+  margin-top: 80px;
+  border-radius: 3px;
+}
+
+.ent{
+  height: 60px;
+  width: 45%;
+  background: brown;
+  margin: auto;
+  margin-top: 90px;
+  border-radius: 10px;
+}
+
+#mes{
+  height: 120px;
+  width: 40%;
+  margin-left: 30%;
+  margin-top: 30px;
+  border-radius: 10px;
+}
+
+.dis{
+  height: 30px;
+  width: 25%;
+  background: brown;
+  margin: auto;
+  margin-top: 30px;
+  border-radius: 3px;
+  
+}
+
+.dis p{
+  font-size: 25px;
+  text-align: center;  
+}
+
+#num{
+  height: 30px;
+  width: 5%;
+  border-radius: 3px;
+  margin-left: 47%;
+  margin-top: 20px; 
+}
+
+ul li{
+  display: inline;
+  padding-right: 30px;
+  
+}
+
+
+
+li .ci{
+  margin-top: 50px;
+  margin-left: 618px;
+
+}
+
+li .de{
+  margin-top: 50px;
+  margin-right: 500px;
+  
+}
+
+.ci{
+  width: 8%;
+  height: 50px;;
+}
+
+.de{
+  width: 12%;
+  height: 50px;
+}
+ul li a{
+  font-size: 40px;
+}
+
+ul li a{
+  font-size: 40px;
+}
+
+.bye{
+  height: 60px;
+  width: 40%;
+  background: gray;
+  margin: auto;
+  margin-top: 120px;
+  border-radius: 5px;
+}
+#mes2{
+  height: 120px;
+  width: 40%;
+  margin-left: 30%;
+  margin-top: 30px;
+  border-radius: 10px;
+}
