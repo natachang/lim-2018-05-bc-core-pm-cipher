@@ -21,24 +21,24 @@
 
   <div class="ent"></div>
   
-   <textarea  id="mes"></textarea>
+   <textarea  name="mes" id="mes" placeholder="Escribe aquí"></textarea>
 
   <div class="dis">
     <p>Desplazamientos</p>
   </div>
 
-  <input id="num" type="text">
+  <input type="number" name="disp" id="disp" placeholder="N°" min="1" max="5">
   
   <div>
   <ul>
-    	<li><button id="cip" class="ci"><a>Cifrar</a></button></li>
-      <li><button id="dec" class="de"><a>Descifrar</a></button></li>/
+      <li><button type="button" name="cip" class="ci" onclick="cipherEncode()"><a>Cifrar</a></button></li>
+      <li><button type="button" name="dec" class="de" onclick="cipherDecode()"><a>Descifrar</a></button></li>/
     </ul>
   </div>
 
   <div class="bye"></div>
 
-  <textarea  id="mes2"></textarea>
+  <textarea  name="mes2" id="mes2" placeholder="resultado"></textarea>
 
   </div>
  
