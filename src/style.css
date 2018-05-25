@@ -43,6 +43,10 @@ header{
   border-radius: 3px;
 }
 
+.wel p{
+  color: black;
+}
+
 .ent{
   height: 60px;
   width: 45%;
