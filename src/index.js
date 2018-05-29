@@ -1,36 +1,5 @@
+document.getElementById("cip").addEventListener("click", cipher.encode)
+  
 
-
-    (function(){
-    
-
-    document.getElementById("cip");
-    cip.addEventListener("click",   function cipherEncode(){
-        var output="";
-        var text = document.getElementById("mes").value;
-        var displa = parseInt(document.getElementById("disp").value);
-        for (var i=0; i<text.length;i++){
-            output += String.fromCharCode(text.charCodeAt(i)+displa);
-        }
-        //return alert(output); 
-        document.getElementById("mes2").value = output;
-      });
-      
-    }())
-
+document.getElementById("dec").addEventListener("click", cipher.decode)
  
-    (function(){
-    
-
-        document.getElementById("dec");
-        dec.addEventListener("click",   function cipherDecode(){
-            var output="";
-            var text = document.getElementById("mes").value;
-            var displa = parseInt(document.getElementById("disp").value);
-            for (var i=0; i<text.length;i++){
-               output += String.fromCharCode(text.charCodeAt(i)-displa);
-           }
-           //return alert(output); 
-           document.getElementById("mes2").value = output;
-         });
-          
-        }())
