@@ -1,29 +1,40 @@
 window.cipher = {
    
-  encode : () => {
-    var output="";
-        var text = document.getElementById("mes").value;
-        var displa = parseInt(document.getElementById("disp").value);
-        for (var i=0; i<text.length;i++){
-            if(65<=text.charCodeAt() && text.charCodeAt()<=90) {output += String.fromCharCode((text.charCodeAt(i)-65+displa)%26+65)};
-            if(97<=text.charCodeAt() && text.charCodeAt()<=122) {output += String.fromCharCode((text.charCodeAt(i)-97+displa)%26+97)};
-       }
+  encode : (offset, string) => {
+    let output="";
+    let displacement = parseInt(offset);
+    for (var i=0; i<string.length; i++){
+    if(65<=string.charCodeAt(i) && string.charCodeAt(i)<=90) {
+      output += String.fromCharCode((string.charCodeAt(i)-65+displacement)%26+65)
+    }
 
-        document.getElementById("mes2").value = output;
+    if(97<=string.charCodeAt(i) && string.charCodeAt(i)<=122) {
+      output += String.fromCharCode((string.charCodeAt(i)-97+displacement)%26+97)
+    }
+    }
+
+    return  output;
+
+        
   },
  
-  decode : () => {
-    var output="";
-    var text = document.getElementById("mes").value;
-    var displa = parseInt(document.getElementById("disp").value);
-    for (var i=0; i<text.length;i++){
-    output += String.fromCharCode(text.charCodeAt(i)-displa);
-     }
-     //return alert(output); 
-     document.getElementById("mes2").value = output;
+  decode : (offset, string) => {
+    let output="";
+    let displacement = parseInt(offset);
+    for (var i=0; i<string.length;i++){
+    if(65<=string.charCodeAt() && string.charCodeAt()<=90) {
+      output += String.fromCharCode((string.charCodeAt(i)-90-displacement)%26+90)
+    }
+    if(97<=string.charCodeAt() && string.charCodeAt()<=122) {
+      output += String.fromCharCode((string.charCodeAt(i)-122-displacement)%26+122)
+    }
     }
   
-  };
+    return output;
+  }
+};
+
+
 
 
   
