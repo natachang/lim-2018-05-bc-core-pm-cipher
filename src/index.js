@@ -1,28 +1,28 @@
 
 
    
-let text = document.getElementById("mes");
-let displa = document.getElementById("disp");
-let result = document.getElementById("mes2");
+let text = document.getElementById("message");
+let displacements = document.getElementById("displacements");
+let result = document.getElementById("message2");
 
 
 
 window.onload= function() {
 
-    document.getElementById("cip").addEventListener("click", function(){
+    document.getElementById("encode").addEventListener("click", function(){
 
 
-    result.value = cipher.encode(displa.value, text.value);
+    result.value = cipher.encode(displacements.value, text.value);
       
     });
 
 
     
-    document.getElementById("dec").addEventListener("click", function()
+    document.getElementById("decode").addEventListener("click", function()
     {
 
 
-    result.value = cipher.decode(displa.value, text.value);
+    result.value = cipher.decode(displacements.value, text.value);
 
     });
      
