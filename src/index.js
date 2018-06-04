@@ -1,31 +1,22 @@
 
-
-   
-let text = document.getElementById("message");
+//Declarando variables globales
+let text = document.getElementById("userMessage");
 let displacements = document.getElementById("displacements");
-let result = document.getElementById("message2");
+let result = document.getElementById("result");
 
-
-
-window.onload= function() {
-
+//Cuando carge por completo la página estará disponible la funcionalidad de los botones
+window.onload = function() {
+    /*Si el usuario hace click en el boton "Cifrar" se disparará la siguiente función que 
+    codificará el texto*/
     document.getElementById("encode").addEventListener("click", function(){
-
-
-    result.value = cipher.encode(displacements.value, text.value);
-      
+        result.value = cipher.encode(displacements.value, text.value);
     });
-
-
     
-    document.getElementById("decode").addEventListener("click", function()
-    {
-
-
-    result.value = cipher.decode(displacements.value, text.value);
-
-    });
-     
+    /*Si el usuario hace click en el boton "Descifrar" se disparará la siguiente función 
+    que decodificará el texto*/
+    document.getElementById("decode").addEventListener("click", function(){
+        text.value = cipher.decode(displacements.value, result.value);
+    });     
 };
 
 

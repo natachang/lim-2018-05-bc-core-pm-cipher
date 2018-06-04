@@ -7,46 +7,54 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-  <header>
-       <div class="back">
 
-         <div class="logo">
-           <p><a href="index.html">Cifrado César</a></p>
+  <div class="globalContainer">
 
-         </div>
+    <div class="users">
 
-       </div>
-  </header>
+     <div class="userInformation">
+        <div class="box">
+            <div class="userBox">Usuario:</div>
+            <input type="text" id="user">
+            <div class="userBox">Desplazamientos</div>
+            <input type="number" id="displacements" placeholder="N°" min="1" max="5">   
+        </div>
+         
+      </div>
 
-  <div class="welcome">
-    <p>Ingresa tu mensaje</p> 
+      <div class="list">
+
+          <li><div class="contactList"><a>usuario boot</a></div></li>
+          <li><div class="contactList"><a>Lola</a></div></li>
+          <li><div class="contactList"><a>Pepe</a></div></li>
+          <li><div class="contactList"><a>María</a></div></li>
+          <li><div class="contactList"><a>Luis</a></div></li>
+          <li><div class="contactList"><a>Jazmín</a></div></li>
+    
+      </div>
+    </div>
+
+    <div class="conversation">
+      <div class="chatBox">
+        <div class="chatLogs">
+          <div class="chat friend">
+            <p class="usuario">Natalie Chang</p>
+            <div class="mensaje">
+              <textarea class="chat-message" id="result"></textarea>
+              <button type="button" class="decode" id="decode" class="decode"><a>Descifrar</a></button>
+            </div>
+          </div>
+         
+        <div class="chat-form">
+          <textarea id="userMessage" placeholder="Escribe aquí"></textarea>
+          <button type="button" id="encode" class="encode"><a>Enviar</a></button>
+        </div>
+      </div>
+    </div>
+   </div>
   </div>
-
-  <div class="enter"></div>
-  
-   <textarea  name="message" id="message" placeholder="Escribe aquí"></textarea>
-
-  <div class="box">
-    <p>Desplazamientos</p>
-  </div>
-
-  <input type="number" name="displacements" id="displacements" placeholder="N°" min="1" max="5">
-  
-  <div>
-  <ul>
-      <li><button type="button" name="encode" id="encode" class="encode"><a>Cifrar</a></button></li>
-      <li><button type="button" name="decode" id="decode" class="decode"><a>Descifrar</a></button></li>/
-    </ul>
-  </div>
-
-  <div class="bye"></div>
-
-  <textarea  name="message2" id="message2" placeholder="Resultado"></textarea>
-
-  
- 
-    <div id="root"></div>
-    <script src="cipher.js"></script>
-    <script src="index.js"></script>
-  </body>
+  <div id="root"></div>
+  <script src="cipher.js"></script>
+  <script src="index.js"></script>
+ </body>
 </html>
