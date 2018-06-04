@@ -40,7 +40,7 @@ body{
   background: #E6E6FA;
   width: 100%;
   height: 181px;
-  border-right: 1.5px solid #dedede; 
+  border-right: 2px solid #dedede; 
   float: left;
 }
 
@@ -53,6 +53,7 @@ li{
   margin-top: 181px;
   border-top: 1.5px solid #e9e9e9;
   border-right: 1.5px solid #dedede;  
+  
    
 }
 
@@ -61,7 +62,7 @@ li{
   background: white;
   width: 100%;
   height:80px;
-  border-bottom: 1.5px solid #e9e9e9;
+  border-bottom: 2px solid #e9e9e9;
   
 }
 
@@ -156,10 +157,8 @@ li{
   margin-left: 290px;
   display: flex;
   align-items: flex-start;   
-  width: 560px;
-  
+  width: 560px;  
 }
-
 
 .chat-form textarea {
   background: #fbfbfb;
@@ -181,10 +180,12 @@ li{
 .chat-form button {
   background: #1ddced;
   padding: auto 15px;
-  font-size: 30px;
+  font-size: 28px;
   color: #fff;
   border: none;
   height: 50px;
   border-radius: 5px;
   margin-top: 10px;
+  margin-left: 5px; 
 }
+
